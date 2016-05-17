@@ -4,13 +4,13 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'hard to guess string'
-    SQLALCHEMY_COMMIT_ON_TEARDOWN = True
-    # MAIL_SERVER = 'smtp.googlemail.com'
+    SQLALCHEMY_COMMIT_ON_TEARDOWN = True  # auto commit after db.session.add
+
     MAIL_SERVER = 'applesmtp.163.com'
     MAIL_PORT = 0
     MAIL_USE_TLS = True
     MAIL_USERNAME = 'huamingrui@163.com'
-    MAIL_PASSWORD = ''
+    MAIL_PASSWORD = '3322323'
     FLASKY_ADMIN = 'huamingrui@163.com'
     # MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
     # MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
