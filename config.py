@@ -18,6 +18,7 @@ class Config:
     FLASKY_MAIL_SUBJECT_PREFIX = '[MrHua]'
     FLASKY_MAIL_SENDER = 'MrHua <huamingrui@163.com>'
     SQLALCHEMY_TRACK_MODIFICATIONS = True
+    FLASKY_POSTS_PER_PAGE = 20
 
     @staticmethod
     def init_app(app):
