@@ -11,8 +11,8 @@ class Config:
     MAIL_SERVER = 'applesmtp.163.com'
     MAIL_PORT = 0
     MAIL_USE_TLS = True
-    MAIL_USERNAME = 'huamingrui@163.com'
-    MAIL_PASSWORD = '3322323'
+    MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     FLASKY_MAIL_SUBJECT_PREFIX = '[MrHua]'
     FLASKY_MAIL_SENDER = 'MrHua <huamingrui@163.com>'
     FLASKY_ADMIN = 'huamingrui@163.com'
